@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_top"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yuntong.here.view.RoundImageView
+            android:id="@+id/image_round_pic"
+            android:layout_marginTop="40dp"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_head_bg"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/text_image"
+            android:layout_width="2dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="7dp"
+            android:layout_alignBottom="@+id/image_round_pic"
+            android:layout_toRightOf="@+id/image_round_pic"/>
+
+        <com.yuntong.here.view.RoundImageView
+            android:id="@+id/image_getcamera"
+            android:layout_width="30dp"
+            android:layout_toLeftOf="@+id/text_image"
+            android:layout_alignBottom="@+id/text_image"
+            android:src="@drawable/icon_head"
+            android:scaleType="fitXY"
+            android:layout_alignRight="@+id/text_image"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="36dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_nickname"/>
+
+        <EditText
+            android:id="@+id/edt_name_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="46dp"
+            android:hint="@string/hint_nick_name"
+            android:maxLength="24"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_sexy"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_sexy"/>
+        <TextView
+            android:id="@+id/sexy"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_sexy"
+            android:layout_marginLeft="28dp"
+            android:text="女"
+            android:textSize="16sp"
+            android:textColor="@color/gray_black"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_sexy_man"
+            android:layout_width="72dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/personal_info_sexyed_btn"
+            android:text="男"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="24dp" />
+        <TextView
+            android:id="@+id/btn_sexy_women"
+            android:layout_width="72dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_sexy_man"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/personal_info_sexy_btn"
+            android:text="女"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_black"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_personalinfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_selector"
+        android:textSize="16sp"/>
+
+</LinearLayout>

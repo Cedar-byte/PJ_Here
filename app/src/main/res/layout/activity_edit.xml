@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/green">
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/backarrow"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_toRightOf="@+id/relative_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72.5dp"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="HERE"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true">
+            <Button
+                android:id="@+id/title_send"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:background="@drawable/send_btn_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_centerVertical="true"
+            android:text="发送"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@null"
+        android:minLines="8"
+        android:maxLines="8"
+        android:gravity="top"
+        android:maxLength="140"
+        android:paddingLeft="24.5dp"
+        android:paddingTop="16dp"
+        android:hint="@string/say_something"
+        android:textSize="16sp"
+        android:textColorHint="@color/gray_text"/>
+
+     <com.yuntong.here.view.NoScrollGridView
+         android:id="@+id/gridview_image"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="24dp"
+         android:layout_marginRight="56dp"
+         android:horizontalSpacing="8dp"
+         android:numColumns="4"
+
+         android:verticalSpacing="8dp" />
+
+
+</LinearLayout>

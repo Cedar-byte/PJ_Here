@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="144dp"
+        android:background="@drawable/bg_pop"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txt_pop_big"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="该手机已被注册，"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="208dp"
+            android:layout_below="@+id/txt_pop_big"
+            android:layout_height="49dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="可直接登录。"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_pop_big_confirm1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginBottom="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:textSize="14sp"
+            android:text="去登录"
+            android:textColor="@color/green"/>
+        <TextView
+            android:id="@+id/txt_pop_big_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignBottom="@+id/txt_pop_big_confirm"
+            android:layout_marginRight="38dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="17dp"
+            android:layout_toLeftOf="@+id/txt_pop_big_confirm"
+            android:text="   取消"
+            android:textColor="@color/green"/>
+    </RelativeLayout>
+
+</LinearLayout>

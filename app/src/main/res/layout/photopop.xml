@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@drawable/register_btn_bg"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="264dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="96dp">
+
+            <Button
+                android:id="@+id/get_pic"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/pop_btn_bg"
+                android:text="选取照片"
+                android:textSize="16sp"
+                android:textColor="@color/persionnal_puperwidow"
+                android:gravity="center|left"
+                android:paddingLeft="24dp"
+                />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/persionnal_puperwidow_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp">
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="72dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/pop_btn_bg"
+                    android:text="取消"
+                    android:textSize="16sp"
+                    android:textColor="@color/green"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

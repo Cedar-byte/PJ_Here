@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/icon_location"
+                    android:layout_height="14dp" />
+                <TextView
+                    android:id="@+id/myhere_name"
+                    android:layout_width="wrap_content"
+                    android:text="杭州湾信息港"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="@color/green"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/myhere_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:textColor="@color/persionnal_puperwidow"
+                android:text="此处是here内容，此处是here内容，此处是here内容，此处是here内容，此处是here内容，此处是here内容，"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|left"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/my_here_date"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/here_time"
+                    android:layout_height="wrap_content"
+                    android:text="2016.4.5"/>
+                <TextView
+                    android:id="@+id/my_here_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="9dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/here_time"
+                    android:layout_height="wrap_content"
+                    android:text="12.24"/>
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/icon_here_not_dianzan"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:id="@+id/my_here_zan"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="@color/here_time"
+                    android:layout_height="wrap_content"
+                    android:text="13"/>
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/icon_here_comment"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:id="@+id/my_here_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:textSize="12sp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/here_time"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="104dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="104dp">
+            <ImageView
+                android:id="@+id/my_here_image"
+                android:layout_width="104dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg"
+                android:layout_height="104dp" />
+            <TextView
+                android:id="@+id/my_here_imagenum"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="共4张"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

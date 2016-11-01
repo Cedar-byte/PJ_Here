@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lay_messageitem"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/message_pic"
+            android:layout_margin="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/message_name"
+                    android:text="郑钱囧"
+                    android:textSize="16sp"
+                    android:textColor="@color/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/message_title"
+                    android:text="请求加你为好友"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/message_time"
+                    android:text="12.22"
+                    android:textSize="10sp"
+                    android:textColor="@color/gray_text"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/message_conent1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:text="我是软妹纸"
+                    android:padding="6dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/message_agreed"
+                    android:layout_width="48dp"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="同意"
+                    android:background="@drawable/btn_agreed_bg"
+                    android:textColor="@color/green"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="24dp" />
+                <Button
+                    android:id="@+id/message_agreeded"
+                    android:layout_width="48dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:text="已同意"
+                    android:visibility="gone"
+                    android:background="@drawable/btn_unagreed_bg"
+                    android:textColor="@color/gray_text"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="19dp"
+        android:background="@color/persionnal_puperwidow_line"
+        android:layout_height="0.5dp" />
+
+
+</LinearLayout>

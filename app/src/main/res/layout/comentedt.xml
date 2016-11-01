@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/gray_setting"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edt_comment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="说点什么吧"
+        android:layout_margin="9dp"
+        android:paddingBottom="9dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/small_btn_press"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <Button
+            android:id="@+id/btn_commnet"
+            android:layout_width="64dp"
+            android:text="发送"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/send_btn"
+            android:layout_marginRight="9dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

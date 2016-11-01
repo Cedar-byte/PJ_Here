@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/lin0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/collection"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/dialog_btn_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="24dp"
+                android:text="收藏/取消收藏"
+                android:textColor="@color/persionnal_puperwidow"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_height="72dp">
+            <LinearLayout
+                android:id="@+id/share_webchat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_wechat"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/share_webchat_friend"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_wechat_friend"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/share_qq"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_qq"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/share_weibo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_weibo"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/copy_link"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/dialog_btn_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="24dp"
+                android:text="复制链接"
+                android:textColor="@color/persionnal_puperwidow"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <Button
+                android:id="@+id/share_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/dialog_btn_bg"
+                android:gravity="right|center_vertical"
+                android:paddingRight="16dp"
+                android:text="取消"
+                android:textColor="@color/green"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <include layout="@layout/title_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_phone_number"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/green"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_verifyCode"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/green"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_set_password"
+            android:textColor="@color/gray_black"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/verifyCode_to_number"
+        android:textColor="@color/gray_black"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="27dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_verifycode"/>
+
+        <EditText
+            android:id="@+id/edt_register_verifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="46dp"
+            android:background="@null"
+            android:hint="@string/verifyCode"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_black"/>
+        <Button
+            android:id="@+id/btn_timecount"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/miao"
+            android:textSize="10sp"
+            android:textColor="@color/green"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_black"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send_verifyCode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/send_verifyCode"
+        android:textColor="@color/gray_white"
+        android:textSize="16sp"
+        android:background="@drawable/button_bg_selector"/>
+
+</LinearLayout>

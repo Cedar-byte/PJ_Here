@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="start"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:background="@color/green"
+        android:layout_weight="0.9">
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/icon_head_bg"/>
+        <Button
+            android:id="@+id/btn_login_sliding"
+            android:layout_width="96dp"
+            android:layout_marginTop="24dp"
+            android:text="去登陆"
+            android:gravity="center"
+            android:background="@drawable/btn_login_bg"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:layout_height="32dp" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/my_collection"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/icon_my_collection"
+                   android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="收藏"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/my_here"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/icon_my_here"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Here"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/my_comment"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/icon_my_comment"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="评论"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/linear_message"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="59dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_msg"
+                android:layout_marginLeft="68dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="消息"
+                android:textSize="14sp"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/persionnal_puperwidow"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="8dp"
+                android:id="@+id/unmessaged"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:paddingBottom="4dp"
+                android:src="@drawable/circle_red"
+                android:layout_height="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_friends"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="38dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_friend"
+                android:layout_marginLeft="68dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="好友"
+                android:textSize="14sp"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/persionnal_puperwidow"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_setting"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="38dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_set"
+                android:layout_marginLeft="68dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="设置"
+                android:textSize="14sp"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/persionnal_puperwidow"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

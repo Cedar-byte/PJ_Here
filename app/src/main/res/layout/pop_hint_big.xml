@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="144dp"
+        android:background="@drawable/bg_pop"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txt_pop_big"
+            android:layout_width="208dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="您必须同意云瞳《用户协议》 才能进行下一步操作！"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_pop_big_confirm"
+            android:layout_width="29dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:textSize="14sp"
+            android:text="@string/confirm"
+            android:textColor="@color/green"/>
+    </RelativeLayout>
+
+</LinearLayout>

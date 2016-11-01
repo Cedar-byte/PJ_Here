@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容，此处是评论内容"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/gray_setting"
+            android:textColor="@color/gray_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"/>
+        <TextView
+            android:id="@+id/here_name"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/gray_setting"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaa"/>
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:background="@color/gray_setting"
+            android:paddingBottom="8dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/gray_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="的Here"/>
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="2016.5.5"
+            android:layout_marginRight="16dp"
+            android:gravity="right|center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

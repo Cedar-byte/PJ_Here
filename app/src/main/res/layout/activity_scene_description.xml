@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_top"/>
+
+        <ImageView
+            android:id="@+id/img_scene_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/backarrow"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="场景介绍"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"/>
+
+        <com.yuntong.here.view.RoundCornerImageView
+            android:id="@+id/img_scene_head_small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:layout_marginLeft="80.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_distance_big"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="76dp"/>
+
+        <TextView
+            android:id="@+id/text_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="104dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_hot_big"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="148dp"/>
+
+        <TextView
+            android:id="@+id/text_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="176dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_contact_way"
+        android:layout_marginTop="208dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/text_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="214dp"
+        android:textColor="@color/gray_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="214dp"
+        android:text="呼叫"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_location_big"
+        android:layout_marginTop="264dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/text_adress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="270dp"
+        android:textColor="@color/gray_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_daohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="273dp"
+        android:text="导航"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="18dp"
+        android:text="介绍"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="368dp"
+        android:layout_marginLeft="18dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

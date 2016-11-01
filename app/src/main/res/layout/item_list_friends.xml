@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/linear_zimu"
+            android:layout_width="72dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_zimu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="A"
+                android:textSize="24sp"
+                android:textColor="@color/red_zimu"
+                android:layout_marginLeft="19dp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_friends_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="72dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/text_friends_name"
+            android:layout_toRightOf="@+id/img_friends_head"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Amar Sagoo"
+            android:textSize="16sp"
+            android:textColor="@color/black_contact"/>
+    </RelativeLayout>
+
+</RelativeLayout>
